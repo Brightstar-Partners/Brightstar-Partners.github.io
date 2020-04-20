@@ -351,20 +351,29 @@ img {
   height: auto;
 }
 
+html {
+  font-family: Signika, sans-serif;
+}
+
+p {
+  font-weight: 300;
+}
+
 h2 {
   font-size: 1.875rem;
 }
 
 h3 {
-  font-size: 1.5rem;
+  font-size: 1.875rem;
 }
 
 h4 {
-  font-size: 1.125rem;
+  font-size: 1.25rem;
 }
 
 p {
   margin-bottom: 0.5rem;
+  font-size: 1.125rem
 }
 
 ul {
