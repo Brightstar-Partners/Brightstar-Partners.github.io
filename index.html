@@ -20,6 +20,9 @@
 
         <link href="https://fonts.googleapis.com/css2?family=Signika:wght@300;400;600&display=swap" rel="stylesheet">
 
+        <script src="https://code.jquery.com/jquery-3.5.0.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+        <script src="/js/responsiveslides.min.js"></script>
+
         <meta http-equiv="cleartype" content="on">
     </head>
     <body class="flex flex-col min-h-screen lg:w-3/5 lg:m-auto">
@@ -46,11 +49,14 @@
                 <div class="md:hidden"><a class="text-white" href="/contact/">Contact</a></div>
             
             </nav>
-            <div class="w-full">
-    <img class="w-full" src="/images/handshake.webp" />
-</div>
+            <ul class="rslides lg:mx-auto lg:w-3/4">
+  <li><img src="/images/home-0.jpg" alt=""></li>
+  <li><img src="/images/home-1.jpg" alt=""></li>
+  <li><img src="/images/home-2.jpg" alt=""></li>
+  <li><img src="/images/home-3.jpg" alt=""></li>
+</ul>
 <div class="flex-1 md:flex md:flex-row">
-    <div class="w-auto md:w-1/2 my-4 mx-2 md:mx-6 md:border-t-4 md:border-black md:border-solid lg:ml-0">
+    <div class="w-auto md:w-1/2 mx-2 mt-2 md:mx-6 md:border-t-4 md:border-black md:border-solid lg:ml-0">
         <h3 class="mb-2">Brightstar Partners</h3>
         <div>
             <p>
@@ -83,6 +89,11 @@
         </div>
     </div>
 </div>
+<script>
+  $(function() {
+    $(".rslides").responsiveSlides();
+  });
+</script>
 
             <footer class="bottom-0 w-auto bg-indigo-700">
                 <div class="p-2 text-sm text-white">&copy; 2020 Brightstar Partners</div>
